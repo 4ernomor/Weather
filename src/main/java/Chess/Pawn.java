@@ -18,11 +18,6 @@ public class Pawn extends ChessPiece {
             return targetPiece != null && !targetPiece.getColor().equals(this.getColor()); // взятие фигуры
         }
 
-//        int rowDirection = this.getColor().equals("White") ? -1 : 1;
-//        if (Math.abs(column - toColumn) == 1 && toLine == line + rowDirection) {
-//            targetPiece = chessBoard.board[toLine][toColumn];
-//            return targetPiece != null && !targetPiece.getColor().equals(this.getColor()); // Проверка на цвет фигуры
-//        }
 
         if (color.equals("White")) {
             if (line == 1 && toLine == 3 && column == toColumn && chessBoard.board[2][column] == null)
